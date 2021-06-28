@@ -62,10 +62,29 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -394,33 +413,41 @@ body {
   margin-bottom: 50px;
 }
 
-.buttons__list .:not(:last-child) {
+.buttons__list :not(:last-child) {
   margin-right: 8px;
 }
 
 .clients__header {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .clients__header {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--clients-logo);
   border-radius: 4px;
@@ -434,6 +461,33 @@ body {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   cursor: pointer;
+}
+
+.clients__item {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
+  max-width: 210px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    max-width: 170px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-top: 50px;
 }
 
 .header {
@@ -627,13 +681,43 @@ body {
 
 .hero {
   background: var(--bgraund-grey-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg ");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-mob.jpg");
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-mob@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-tablet.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg@2x.jpg");
+  }
 }
 
 .hero__header {
@@ -648,22 +732,65 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero__header {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
 .hero__btn {
   padding: 10px 32px 10px 32px;
 }
 
 .our-team__header {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .our-team__header {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.our-team__picture {
+  max-width: 100%;
+}
+
 .our-team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.our-team__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    max-width: 270px;
+  }
 }
 
 .our-team__text {
@@ -702,6 +829,12 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
 
 .services {
@@ -746,6 +879,64 @@ body {
   padding-bottom: 27px;
 }
 
+.specifics {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.specifics__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .specifics__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics__item {
+    max-width: 270px;
+  }
+}
+
+.specifics__item-icon {
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .specifics__item-icon {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics__item-icon {
+    max-width: 270px;
+  }
+}
+
+.specifics__header {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .specifics__header {
+    text-align: center;
+  }
+}
+
 .specifics__list {
   display: flex;
   flex-wrap: wrap;
@@ -753,27 +944,10 @@ body {
   margin-top: -30px;
 }
 
-.specifics__list .header-item {
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .specifics__list .text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
-}
-
-.specifics {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.specifics__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  max-width: 270px;
 }
 
 .specifics__list-icons {
@@ -788,7 +962,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
