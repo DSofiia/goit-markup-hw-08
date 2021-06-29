@@ -1,24 +1,50 @@
-.mobile-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 480px;
-    height: 796px;
-    background-color: white;
-    overflow: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
-
-    &__conteiner{
-        position: relative;
-        padding-left: 25px;
-    }
-    &__close-btn{
-        position: absolute;
+@media screen and (max-width: 767px) {
+    .mobile-menu{
+        position: fixed;
         top: 0;
-        right: 0;
-        border: none;
-        background-color: transparent;
-        padding: 0;
+        left: 0;
+        width: 480px;
+        height: 796px;
+        overflow: auto;
+        background-color: white;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        &__container{
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 15px;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            position: relative;
+        }
+
+        &__close-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__menu-btn {
+      display: none;
     }
 }
