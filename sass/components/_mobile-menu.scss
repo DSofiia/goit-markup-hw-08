@@ -3,8 +3,8 @@
         position: fixed;;
         top: 0;
         left: 0;
-        width: 480px;
-        height: 796px;
+        width: 100%;
+        height: 496px;
         overflow: auto;
         background-color: white;
         opacity: 0;
@@ -97,7 +97,7 @@
     }
 
     .mobile-menu__social-item{
-       display:inline ; 
+        display: inline;
     }
 
     .mobile-menu__social-item:not(:last-child)::after {
