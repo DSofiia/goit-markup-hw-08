@@ -636,6 +636,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 210px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -834,6 +835,10 @@ body {
   .potrtfolio__item {
     width: 370px;
   }
+}
+
+.potrtfolio__picture {
+  width: 100%;
 }
 
 .potrtfolio__item-text {
