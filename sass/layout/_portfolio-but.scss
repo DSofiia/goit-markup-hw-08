@@ -1,4 +1,4 @@
-.buttons__item{
+.buttons__btn{
   font-family: inherit;
   font-style: normal;
   background-color: #f5f4fa;
@@ -31,12 +31,30 @@
 } 
 
 .buttons__list{
-  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; 
+  }
+
   margin: 0;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   
   & :not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+.buttons__item{
+  @media screen and (max-width: 767px) {
+    display: inline; 
+    margin-bottom: 15px;
+  }
+}
+
+.buttons__btn{
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }

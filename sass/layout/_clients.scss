@@ -1,34 +1,41 @@
 .clients__header {
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-}
 
-@media screen and (min-width: 1200px){
-  .clients__header {
-  font-size: 36px;
-  line-height: 1.17;
-  } 
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .clients{
   padding-top: 60px;
   padding-bottom: 60px;
-} 
 
-@media screen and (min-width: 1200px) {
-  .clients{
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-  } 
+  }
+}  
+
+.clients-list{
+  margin: 35px -15px -15px -15px;
+  
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
- 
+
+.clients__item{
+  margin: 15px;
+}
+  
 .clients__link{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 92px;
   border: 1px solid var(--clients-logo);
   border-radius: 4px;
@@ -36,6 +43,15 @@
   transition-property: fill, border-color;
   transition-duration:  250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 210px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  } 
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
     
   &:hover,
   &:focus{
@@ -45,26 +61,3 @@
   }
 }
 
-.clients__item {
-  width: 100%;
-  margin-left: 30px;
-  margin-top: 30px;
-  max-width: 210px;
-}
-@media screen and (min-width: 768px) {
-  .clients__item{
-    max-width: 226px;
-  } 
-}
-@media screen and (min-width: 1200px) {
-  .clients__item{
-    max-width: 170px;
-  } 
-}
-.clients-list{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-top: 50px; 
-}

@@ -7,8 +7,9 @@
   padding-left: 0px;
   padding-right: 0px;
   text-align: center;
+  margin: 0 auto;
 }
-  
+
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
 (min-resolution: 192dpi) and (max-width: 767px),
 (min-resolution: 2dppx) and (max-width: 767px){
@@ -17,27 +18,28 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width:768px) and (max-width:1199px){
   .hero {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-tablet.jpg");
   } 
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-(min-resolution: 192dpi) and (min-width: 768px),
-(min-resolution: 2dppx) and (min-width: 768px){
+@media (min-device-pixel-ratio: 2) and (min-width:768px) and (max-width:1199px),
+(min-resolution: 192dpi) and (min-width:768px) and (max-width:1199px),
+(min-resolution: 2dppx) and (min-width:768px) and (max-width:1199px){
   .hero{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-tablet@2x.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1200px){
   .hero {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg.jpg");
   } 
-}
+} 
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
 (min-resolution: 192dpi) and (min-width: 1200px),
 (min-resolution: 2dppx) and (min-width: 1200px){
   .hero{

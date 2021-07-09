@@ -18,7 +18,7 @@
 </head>
 
     <body>
-        <header class="header">
+        <header class="header border-header">
             <div class="container header__container">
                 <nav class="navigation"> 
                     <a href="index.html" lang="en" class="link logo">Web<span class="logo_black">Studio</span></a>
@@ -28,24 +28,67 @@
                         <li  class="navigation__item "><a class="navigation__link link" href="">Контакты</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="header__menu-btn" data-menu-button>
+                    <svg class="header__mobile-menu-icon">
+                        <use href="./images/sprite.svg#burger-icon"></use>
+                    </svg>
+
+                </button>
+
+
                 <ul class="contact__list">
                     <li  class="navigation__item">
                         <a class="link " href="mailto:info@devstudio.com">
                             <svg class="contact__list-icon mail">
                                 <use href="./images/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com
+                            </svg>info@devstudio.com
                         </a>
                     </li>
                     <li  class="navigation__item">
                         <a class="link" href="tel:+380961111111">
                             <svg class="contact__list-icon tel">
                                 <use href="./images/sprite.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                            </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-btn-icon" width=18px height=18px>
+                    <use href="./images/sprite.svg#icon-vectorclose"></use>
+                </svg>
+                </button>
+                <ul class="list mobile-menu__list">
+                    <li  class="mobile-menu__item "><a class="mobile-menu__link link current" href="./index.html">Студия</a></li>
+                    <li  class="mobile-menu__item "><a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a></li>
+                    <li  class="mobile-menu__item "><a class="mobile-menu__link link" href="">Контакты</a></li>
+                </ul>
+                <div class="mobile-menu__contact">
+                <ul class="mobile-menu__contact__list list">
+                   
+                    <li  class="mobile-menu__item ">
+                        <a class="link mobile-menu__contact__current" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+
+                    <li  class="mobile-menu____item">
+                        <a class="link" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="list mobile-menu__social-list">
+                    <li  class="mobile-menu__social-item "><a class="mobile-menu__social-link link " href="">Instagram</a></li>
+                    <li  class="mobile-menu__social-item "><a class="mobile-menu__social-link link" href="">Twitter</a></li>
+                    <li  class="mobile-menu__social-item "><a class="mobile-menu__social-link link" href="">Facebook</a></li>
+                    <li  class="mobile-menu__social-item "><a class="mobile-menu__social-link link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
         </header>
 
         <main>
@@ -53,18 +96,19 @@
                 <div class="container">
                     <h1 style="display: none;" class="main-section__header" >Портфолио</h1>
 
-                    <!-- buttons -->
-                    <ul class="list buttons__list">
-                        <li class=""><button class="buttons__item" type="button"> Все </button></li>
-                        <li class=""><button class="buttons__item" type="button"> Веб-сайты </button></li>
-                        <li class=""><button class="buttons__item" type="button"> Приложения </button></li>
-                        <li class=""><button class="buttons__item" type="button"> Дизайн </button></li>
-                        <li class=""><button class="buttons__item" type="button"> Маркетинг</button></li>
+         
+                     <!--buttons-->
+                     <ul class="list buttons__list">
+                        <li class="buttons__item"><button class="buttons__btn" type="button"> Все </button></li>
+                        <li class="buttons__item"><button class="buttons__btn" type="button"> Веб-сайты </button></li>
+                        <li class="buttons__item"><button class="buttons__btn" type="button"> Приложения </button></li>
+                        <li class="buttons__item"><button class="buttons__btn" type="button"> Дизайн </button></li>
+                        <li class="buttons__item"><button class="buttons__btn" type="button"> Маркетинг</button></li>
                         
                     </ul>
-                    
+                 
                     <!-- portfolio -->
-                    <ul class="list potrtfolio__list">
+                   <ul class="list potrtfolio__list">
                         <li class=" potrtfolio__item">
                             <a href="" class="potrtfolio__link link">
                                 <div class="potrtfolio__list-img">
@@ -79,7 +123,7 @@
                                         <source srcset="./images/imgproject-1mob.webp 1x, ./images/imgproject-1mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-1mob.jpg 1x, ./images/imgproject-1mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-1mob.jpg" alt="Відкритий веб-сайт" width="370" height="294">
+                                        <img src="./images/imgproject-1mob.jpg" alt="Відкритий веб-сайт" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay">Технокряк это современная площадка распространения коронавируса. 
@@ -108,7 +152,7 @@
                                         <source srcset="./images/imgproject-2mob.webp 1x, ./images/imgproject-2mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-2mob.jpg 1x, ./images/imgproject-2mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-2mob.jpg" alt="Постер з баскетболістами" width="370" height="294">
+                                        <img src="./images/imgproject-2mob.jpg" alt="Постер з баскетболістами" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -134,7 +178,7 @@
                                         <source srcset="./images/imgproject-3mob.webp 1x, ./images/imgproject-3mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-3mob.jpg 1x, ./images/imgproject-3mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-3mob.jpg" alt="Логотип ресторану" width="370" height="294">
+                                        <img src="./images/imgproject-3mob.jpg" alt="Логотип ресторану" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -160,7 +204,7 @@
                                         <source srcset="./images/imgproject-4mob.webp 1x, ./images/imgproject-4mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-4mob.jpg 1x, ./images/imgproject-4mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-4mob.jpg" alt="Навушники" width="370" height="294">
+                                        <img src="./images/imgproject-4mob.jpg" alt="Навушники" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -186,7 +230,7 @@
                                         <source srcset="./images/imgproject-5mob.webp 1x, ./images/imgproject-5mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-5mob.jpg 1x, ./images/imgproject-5mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-5mob.jpg" alt="Паперові коробки" width="370" height="294">
+                                        <img src="./images/imgproject-5mob.jpg" alt="Паперові коробки" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -212,7 +256,7 @@
                                         <source srcset="./images/imgproject-6mob.webp 1x, ./images/imgproject-6mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-6mob.jpg 1x, ./images/imgproject-6mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-6mob.jpg" alt="Монітор" width="370" height="294">
+                                        <img src="./images/imgproject-6mob.jpg" alt="Монітор" class="potrtfolio__picture">
                                     </picture>
                                 
                                 <p class="overlay"></p>
@@ -238,7 +282,7 @@
                                         <source srcset="./images/imgproject-7mob.webp 1x, ./images/imgproject-7mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-7mob.jpg 1x, ./images/imgproject-7mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-7mob.jpg" alt="Журнал" width="370" height="294">
+                                        <img src="./images/imgproject-7mob.jpg" alt="Журнал" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -264,7 +308,7 @@
                                         <source srcset="./images/imgproject-8mob.webp 1x, ./images/imgproject-8mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-8mob.jpg 1x, ./images/imgproject-8mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-8mob.jpg" alt="Логотип" width="370" height="294">
+                                        <img src="./images/imgproject-8mob.jpg" alt="Логотип" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -290,7 +334,7 @@
                                         <source srcset="./images/imgproject-9mob.webp 1x, ./images/imgproject-9mob@2x.webp 2x" media="(min-width: 280px)" type="image/webp">
                                         <source srcset="./images/imgproject-9mob.jpg 1x, ./images/imgproject-9mob@2x.jpg 2x" media="(min-width: 280px)">
                                         
-                                        <img src="./images/imgproject-9mob.jpg" alt="Розробка додатку" width="370" height="294">
+                                        <img src="./images/imgproject-9mob.jpg" alt="Розробка додатку" class="potrtfolio__picture">
                                     </picture>
 
                                 <p class="overlay"></p>
@@ -306,10 +350,10 @@
             </section>
         </main>
 
-
         <footer class="footer">
             <div class="container">
                 <div class="column">
+                    <div class="column_tablet">
                     <div class="footer-contact">
                     <a href="index.html" lang="en" class="logo link">Web<span class="logo_white">Studio</span></a>
                     <address class="footer-contact__address">
@@ -353,6 +397,9 @@
                         </li>
                     </ul>
                     </div>
+                </div>
+
+
                     <div class="footer-form">
                     <h1 class="footer__header">Подпишитесь на рассылку</h1>
                     <form class="footer-form__form" method="POST">
