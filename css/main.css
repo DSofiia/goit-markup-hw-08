@@ -837,10 +837,6 @@ body {
   }
 }
 
-.potrtfolio__picture {
-  width: 100%;
-}
-
 .potrtfolio__item-text {
   color: #212121;
   background-color: var(--text-white-color);
@@ -848,6 +844,10 @@ body {
   border: 1px;
   border-style: none solid solid solid;
   border-color: #eeeeee;
+}
+
+.potrtfolio__picture {
+  width: 100%;
 }
 
 .potrtfolio__list-img {
