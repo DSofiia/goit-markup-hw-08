@@ -450,6 +450,7 @@ body.modal-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 100;
   }
   .mobile-menu__contact {
     position: absolute;
