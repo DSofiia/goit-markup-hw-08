@@ -168,10 +168,7 @@
     &:focus {
     color: var(--accent-color);
     }
- 
-   & .address {
-    color: var(--text-white-color);
-    }
+
   }
 }
 
@@ -179,7 +176,9 @@
   font-style: normal;
 }
 
-
+.footer-contact__list .address {
+  color: var(--text-white-color);
+  }
 
 
 

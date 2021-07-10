@@ -1398,11 +1398,11 @@ body.modal-open {
   color: var(--accent-color);
 }
 
-.footer-contact__list .link .address {
-  color: var(--text-white-color);
-}
-
 .footer-contact__address {
   font-style: normal;
+}
+
+.footer-contact__list .address {
+  color: var(--text-white-color);
 }
 /*# sourceMappingURL=main.css.map */
