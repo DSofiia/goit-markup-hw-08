@@ -617,7 +617,7 @@ body.modal-open {
   margin: 35px -15px -15px -15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -626,6 +626,12 @@ body.modal-open {
 
 .clients__item {
   margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .clients__link {
@@ -639,8 +645,7 @@ body.modal-open {
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 210px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1099,10 +1104,6 @@ body.modal-open {
   }
 }
 
-.our-team__list {
-  margin: 35px -15px -15px -15px;
-}
-
 .our-team__list .header-item {
   font-size: 16px;
   line-height: 1.19;
@@ -1119,11 +1120,19 @@ body.modal-open {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  .our-team__list {
+    margin-top: 35px;
+    margin-bottom: -15;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .our-team__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 35px -15px -15px -15px;
   }
 }
 
