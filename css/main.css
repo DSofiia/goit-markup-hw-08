@@ -615,13 +615,8 @@ body.modal-open {
 
 .clients-list {
   margin: 35px -15px -15px -15px;
-}
-
-@media screen and (max-width: 767px) {
-  .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .clients__item {
