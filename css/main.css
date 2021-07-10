@@ -56,6 +56,10 @@ body {
   font-size: 14px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .main-section {
   padding-top: 60px;
   padding-bottom: 60px;

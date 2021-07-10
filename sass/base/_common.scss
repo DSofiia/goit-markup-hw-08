@@ -36,4 +36,6 @@ body {
   font-size: 14px;
 }
 
-
+body.modal-open {
+  overflow: hidden;
+}

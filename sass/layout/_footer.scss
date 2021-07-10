@@ -9,9 +9,7 @@
   margin-bottom: 20px;
 }
 
-.footer-contact__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+
 
 @media screen and (max-width: 767px) {
   .footer-contact, .footer-social, .footer-form{
@@ -22,6 +20,10 @@
 
   .footer-contact {
     width: 232px;
+  }
+
+  .footer-contact__item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   .footer-social{
@@ -62,8 +64,12 @@
   .footer-contact {
     width: 232px;
     margin-right: 165px;
- 
   }
+
+  .footer-contact__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
   .footer-social{
     width: 206px;
     margin-top: -42px;
