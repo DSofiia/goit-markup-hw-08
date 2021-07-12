@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--bgraund-grey-color);
+  
 }
 
 .footer .logo {
@@ -13,13 +14,17 @@
 
 @media screen and (max-width: 767px) {
   .footer-contact, .footer-social, .footer-form{
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer .container{
+  display: flex;
+  flex-direction: column;
   }
 
   .footer-contact {
-    width: 232px;
+    margin-bottom: 60px;
   }
 
   .footer-contact__item:not(:last-child) {
@@ -27,17 +32,17 @@
   }
 
   .footer-social{
-    width: 206px;
-    margin-top: 60px;
     margin-bottom: 60px;
   }
 
   .footer-form{
-    max-width: 450px;
+    width: 100%;
+
   }
 
   .footer-form__form-input{
     width: 100%;
+    max-width: 450px;
   }
 
   .footer-form__form-btn{
@@ -48,40 +53,33 @@
   }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container{
+  display: flex;
+  flex-direction: column;
+  }
 
   .column_tablet{
     display: flex;
     align-items: baseline;
-  }
-
-  .footer-contact, .footer-social, .footer-form{
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-
-  .footer-contact {
-    width: 232px;
-    margin-right: 165px;
+    justify-content: space-between;
   }
 
   .footer-contact__item:not(:last-child) {
     margin-bottom: 9px;
   }
   
-  .footer-social{
-    width: 206px;
-    margin-top: -42px;
-   
-  }
-
-  .footer-form{
-    margin-top: 60px;
-  }
-  
   .footer-form__form-input{
     width: 480px;
+  }
+
+  .footer-contact, .footer-social, .footer-form{
+    text-align: center;
+    }
+
+  .footer-form{
+  margin-top: 60px;
   }
 
   .footer-form__form-btn{
@@ -90,34 +88,32 @@
     margin-right: auto;
     margin-left: auto;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
-  .column, .column_tablet{
-    display: flex;
-    align-items: baseline;
-  }
 
-  .footer-form__form{
+  .footer .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    }
+
+   .column_tablet{
+    display: flex;
+    justify-content: space-between;
   }
 
   .footer-form__form-btn{
     position: relative;
     margin-left: 12px;
   }
+
   .footer-contact {
     margin-right: 70px;
-  }
-  .footer-social{
-    margin-right: 93px;
   }
 
   .footer-form__form-input{
     width: 358px;
-  }
+  } 
 }
 
 .footer__header {

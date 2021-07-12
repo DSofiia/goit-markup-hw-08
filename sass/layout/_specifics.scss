@@ -10,33 +10,38 @@
 
 
 .specifics__list {
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   & .text {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-grey-color);
   }
-
-  margin: -15px;
-  
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .specifics__item{
-  margin: 15px;
-}
- 
-.specifics__item-icon, .specifics__item {
-  max-width: 450px;
-
+  @media screen and (max-width: 767px) {
+    margin:0 auto;
+    max-width: 450px;
+    &:not(:last-child) {
+      margin-bottom:30px;
+    }
+  }
+  
   @media screen and (min-width: 768px) {
     width: 354px;
+    margin: 15px;
   } 
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+    margin: 15px;
   }
 }
 
