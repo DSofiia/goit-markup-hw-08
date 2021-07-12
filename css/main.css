@@ -565,7 +565,6 @@ body.modal-open {
 }
 
 .buttons__list {
-  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -582,12 +581,6 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .buttons__item {
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .buttons__btn {
     margin-bottom: 15px;
   }
 }

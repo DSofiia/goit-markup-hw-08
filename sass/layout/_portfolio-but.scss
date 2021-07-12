@@ -41,8 +41,6 @@
     justify-content: center;
     margin-bottom: 50px; 
   }
-
-  margin: 0 auto;
   margin-bottom: 25px;
   
   & :not(:last-child) {
@@ -52,12 +50,6 @@
 
 .buttons__item{
   @media screen and (max-width: 767px) { 
-    margin-bottom: 15px;
-  }
-}
-
-.buttons__btn{
-  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 }
