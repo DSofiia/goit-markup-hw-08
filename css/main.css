@@ -622,6 +622,7 @@ body.modal-open {
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients__item {
@@ -630,6 +631,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients__item {
+    max-width: 210px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }

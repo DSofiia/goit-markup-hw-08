@@ -24,12 +24,14 @@
   margin: -15px;
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .clients__item{
   margin: 15px;
 
   @media screen and (max-width: 767px) {
+    max-width: 210px;
     flex-basis: calc((100% - 60px) / 2);}
 }
   
