@@ -1298,8 +1298,8 @@ body.modal-open {
   }
   .column_tablet {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-contact__item:not(:last-child) {
     margin-bottom: 9px;
